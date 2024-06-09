@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .flex-container
+      {
+      display: flex;
+          flex-direction: row-reverse;
+      }
+      .flex-container>div
+      {
+          margin: 10px;
+          padding: 30px;
+          background-color: deeppink;
+          text-align: center;
+
+      }
+
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div >Item1</div>
+    <div >Item2</div>
+    <div >Item3</div>
+    <div >Item4</div>
+</div>
+
+<div class="flex-container">
+    <div style="">Item1</div>
+    <div style="align-self: stretch">Item2</div>
+    <div style="">Item3</div>
+    <div style="">Item4</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+    #test
+    {
+        /*transform: rotate(45deg);*/
+        /*-ms-transform: rotate(45deg);*/
+        /*transform: translate(150px 300px);*/
+        /*transform: scale(2,3);*/
+        /*transform: scaleX(2);*/
+        transform: scaleY(4);
+        /*transform: skew(20deg ,10deg);*/
+        /*transform: skewX(-45deg);*/
+        /*transform: skewY(-45deg);*/
+        /*transform: matrix(1,-0.3,0.1,1.5,0,0);*/
+
+        animation-name: ex;
+        animation-duration:4s ;
+
+        /*animation-name: ex2;*/
+        /*animation-duration:4s ;*/
+    /*    animation-delay: -2s; !*  start time  در این حال دیگر 4 ثانیه انجام نمیدهد فقط در 2 ثانیه *!*/
+    /*   // animation-iteration-count: 5;*/
+    /*    //animation-iteration-count: infinite; !* ت ا زمانی که کاربر در صحفه می چرخد انمیشن انجم می شود *!*/
+    /*   // animation-direction: normal; !* forward *!*/
+    /*  //  animation-direction: reverse;!* backward *!*/
+
+    /*    //animation-iteration-count:3;*/
+    /*   // animation-direction: alternate; !* سه با اینکارو انجام می دهد بصورت فوردارد و بکوارد *!*/
+
+    /*    animation-iteration-count:3;*/
+    /*animation-direction: alternate-reverse;*/
+
+    /*    animation-timing-function:ease;  !*    حرکت  آروم  شروع آروم حرکا تند و دوباره آروم *!*/
+    /*    animation-timing-function:ease-in;*/
+    /*    animation-timing-function:ease-in-out;*/
+
+    /*    //animation-timing-function:linear; !*    حرکت  خطی  *!*/
+    /*    animation:ex2 5s linear 2 alternate;*/
+
+
+
+    }
+    @keyframes ex2
+    {
+    0% {background-color: #31b0d5; widh: 100px}
+     25% {background-color:yellow; width: 150px }
+        50%{background-color: gainsboro;wi:200px }
+        75%{background-color: #0a5175;width:250px }
+        100%{background-color: hotpink;width: 300px }
+
+    }
+    /*@keyframes  ex {*/
+    /*    from {background-color: green}*/
+    /*    to {background-color: yellow}*/
+    /*}*/
+
+    /*#test:hover*/
+    /*{*/
+    /*  transform: rotate3d(0,0,0,0deg);*/
+    /*    box-shadow:2px 2px rosybrown;*/
+    /*}*/
+ /*   a:hover*/
+ /*   {*/
+ /*color: azure;*/
+ /*   }*/
+    #link a:hover
+    {
+        color:red;
+    }
+    #test:hover
+    {
+        box-shadow: 3px 3px 5px gray;
+        font-style: initial;
+        text-shadow:3px 1px white ;
+    }
+    </style>
+    <script language="JavaScript1.5" type="text/javascript" >
+        var person={1:"welcome to",2:"your site"};
+        for(x in person)
+        {
+            document.write(person[x] + " ");
+        }
+        // function car(seats,engine,theradio) {
+        //     this.seats=seats;
+        //     this.engine=engine;
+        //     this.theradio=theradio;
+        // }
+
+
+
+
+    </script>
+
+</head>
+<body>
+<div id="link" ><a   href="index.html">clik me</a></div>
+<div id="test" onclick="changecolor()"  style="background-color:red; width:100px; height: 100px; margin:20px auto"  > test</div>
+
+<img src="images/anoiznam5nuicsh55ql6.jpg" height="400" width="440"/></body>
+</html>

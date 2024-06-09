@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.div1 , .div2*/
+        /*{*/
+        /*    background-color: red;*/
+        /*    width: 70%;*/
+        /*    margin:auto;*/
+        /*    height: 200px;*/
+        /*    position: relative;           ' محل قرارگیری عناصر اصلی همیشه relative است '*/
+        /*    top:20px;       ' محل قرارگیری عنصر نسبت به عنصر قبلی( مثلا صحفه وب) یا عنصر بعدی '*/
+        /*    left:20px;*/
+        /*z-index:999999;*/
+        /*}*/
+
+        .div1 , .div2
+        {
+            background-color: red;
+            width: 70%;
+            margin:auto;
+            height: 200px;
+            position: absolute;           ' روی هم می افتند زیرا والد اصلی آ ها body است موقعیت آن ها نسبت به والد و مطلق است'
+        top:20px;       ' محل قرارگیری عنصر نسبت به صفحه وب یا عنصر قبلی'
+        left:20px;
+        }
+        .div2
+        {
+            background-color:green;
+            top:210px;
+        }
+        .div
+        {
+            position:fixed;
+            background-color: blue;
+            width: 20%; '  برای تثبیت عناصر مثل منوها . چت آنلاین و غیره'
+            height: 200px;
+             bottom:0px;
+            right:0px;
+            z-index:99;
+
+        }
+
+    </style>
+</head>
+<body>
+<!--static-->
+<!--relative-->
+<!--absolute-->
+<!--fixed-->
+<!--sticky-->
+<div class="div1>"></div>
+<div class="div2>"></div>
+<div class="div3>">fixed position</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+       div.intro.intro1
+       {
+           background-color: red;
+       }
+        .intro span{
+            color:yellow;
+        }
+        .intro+h1
+        {
+        background-color:hotpink;
+        }
+        .intro~h1
+        {
+        background-color:blueviolet;
+        }
+        [href]{
+            font-style: italic;
+        }
+        [href="https://www.yahoo.com"]
+        {
+            color: #ff253a;
+            font-size: 2em;
+
+        }
+        /*[title~=cake]  !*   یعنی title   ای که شامل کلمه cake  هست*!*/
+        /*{*/
+
+        /*    width:10%*/
+        /*}*/
+       [title|=cake]  /*   یعنی title   ای که با کلمه cake  شروع شده*/
+       {
+           width: 10%;
+       }
+       h1:before{
+           content:"";
+           width: 0;
+           height:0;
+           border-left:5px solid transparent;
+           border-right:5px solid transparent;
+           border-bottom:10px solid #ff0b21;
+           position: absolute;
+            left: 60px;
+
+
+       }
+       h1:after {
+           content: "**";
+       }
+        #trapezoid{
+        border-bottom: 150px solid red;
+        boreder-left:25px solid transparent;
+        border-right:25px solid transparent;
+        height: 0;
+        width: 100px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+ <div class="intro intro1">
+<span>Hello word</span>
+</div>
+<h1> Go to the word </h1>
+<h1> welcome world </h1>
+
+<a href="https://www.google.com" >Go to Google </a>
+       <br>
+<a href="https://www.yahoo.com" >Go to yahoo </a>
+<br>
+
+ <img src="images/681_798.jpg"  title="cake"/>
+<div id="trapezoid" > salamati best thing</div>
+</body>
+</html>
